@@ -44,18 +44,18 @@ public class Main {
         if (variabileStart.equals("HELP")) {
             System.out.println("Your objective is to explore Mars.");
             System.out.println("Every turn, you can see your team and their status at the top.");
-            System.out.println("You win if you explore the whole of Mars. You lose if your whole team dies.");
+            System.out.println("You win if you explore all of Mars. You lose if your colonists die.");
             System.out.println("Select a team member using the \"select\" command.");
-            System.out.println("Once a team member is selected, use \"moveup\", \"movedown\",\"moveleft\" or \"moveright\" to move, Astronauts cannot move more than once in a turn.");
+            System.out.println("Once a team member is selected, use \"moveup\", \"movedown\",\"moveleft\" or \"moveright\" to move. Astronauts cannot move more than once in a turn.");
             System.out.println("Unexplored tiles are marked with ?, explore them by moving a Colonist over them.");
-            System.out.println("Medics may heal other Astornauts using the \"heal\" command, Engineers may repair other Astronauts' suits using the \"repair\" command");
-            System.out.println("If your suit breaks, you can't move until it is repaired");
-            System.out.println("Once you are ready to proceed, use the \"NextTurn\" command to move on to the next turn");
+            System.out.println("Medics may heal other Astronauts using the \"heal\" command, Engineers may repair other Astronauts suits using the \"repair\" command");
+            System.out.println("If your suit breaks, you can't move until it is repaired.");
+            System.out.println("Once you are ready to proceed, use the \"NextTurn\" command to move on to the next turn.");
             System.out.println("You can end the game at any time using the \"exit\" command");
 
         }
         while (!variabileStart.equals("START")) {
-            System.out.println("Please type START to start the game");
+            System.out.println("Please type START to start the game: ");
             variabileStart = scan.next();
             variabileStart = variabileStart.toUpperCase();
         }
