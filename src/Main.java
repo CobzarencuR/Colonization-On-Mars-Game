@@ -402,7 +402,6 @@ public class Main {
                 System.out.println("Exiting game...");
                 break;
             }
-
         }
     }
 
